@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+    font-family: Vazir;
+    src: url(../fonts/Vazir.eot),url(../fonts/Vazir.ttf),url(../fonts/Vazir.woff),url(../fonts/Vazir.woff2),;
+}
+
+@theme{
+    --spacing-height-article:600px;
+    --spacing-width-menu:80%;
+    --spacing-height-menu:100px;
+    --color-bg-menu:#FFFFFF;
+    --radius-bottom-menu:16px;
+    --font-vaziri:vazir;
+}
+
+body {
+  background: #f3f3f3 !important;
+}
+
+/* Custom primary button color */
+.btn-primary {
+    background-color: #1a4bf0 !important;
+    border-color: #1a4bf0 !important;
+}

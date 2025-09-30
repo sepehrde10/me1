@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <title>Document</title>
+  <style>
+  /* Responsive styles for mobile and desktop */
+  @media (max-width: 1200px) {
+    .wrapper, .w-width-menu, [style*="width:1100px"], [style*="max-width:1100px"], [style*="width:98vw"] {
+      max-width: 98vw !important;
+      width: 98vw !important;
+    }
+  }
+  @media (max-width: 900px) {
+    [style*="display:flex;"][style*="gap:64px"],
+    [style*="display:flex;"][style*="gap:24px"],
+    [style*="display:flex;"][style*="gap:32px"] {
+      gap: 12px !important;
+      flex-wrap: wrap !important;
+    }
+    [style*="display:flex;"][style*="flex-direction:row"] {
+      flex-direction: column !important;
+      align-items: stretch !important;
+    }
+    [style*="display:grid;"] {
+      grid-template-columns: 1fr !important;
+    }
+    [style*="min-width:180px"], [style*="max-width:220px"], [style*="width:300px"] {
+      min-width: 100px !important;
+      max-width: 100vw !important;
+      width: 100% !important;
+    }
+    [style*="padding:32px 32px 0 32px"] {
+      padding: 16px 8px 0 8px !important;
+    }
+    [style*="padding:40px 0 0 0"] {
+      padding: 16px 0 0 0 !important;
+    }
+    [style*="height:140px"] {
+      height: 80px !important;
+    }
+    [style*="height:200px"] {
+      height: 120px !important;
+    }
+    [style*="font-size:2.2rem"] {
+      font-size: 1.3rem !important;
+    }
+    [style*="font-size:1.3rem"] {
+      font-size: 1rem !important;
+    }
+    [style*="font-size:1.6rem"] {
+      font-size: 1.1rem !important;
+    }
+    [style*="font-size:1.25rem"] {
+      font-size: 1rem !important;
+    }
+    [style*="padding:24px 0"] {
+      padding: 12px 0 !important;
+    }
+    [style*="margin:64px auto 64px auto"] {
+      margin: 32px auto 32px auto !important;
+    }
+    [style*="border-radius:24px"] {
+      border-radius: 12px !important;
+    }
+    [style*="border-radius:16px"] {
+      border-radius: 8px !important;
+    }
+  }
+  @media (max-width: 600px) {
+    .wrapper, .w-width-menu, [style*="width:1100px"], [style*="max-width:1100px"], [style*="width:98vw"] {
+      max-width: 100vw !important;
+      width: 100vw !important;
+      padding: 0 !important;
+    }
+    [style*="padding:32px 0 24px 0"] {
+      padding: 12px 0 8px 0 !important;
+    }
+    [style*="padding:20px 16px 16px 16px"] {
+      padding: 8px 4px 8px 4px !important;
+    }
+    [style*="margin:-90px auto 0 auto"] {
+      margin: -40px auto 0 auto !important;
+    }
+    [style*="margin:48px auto 48px auto"] {
+      margin: 16px auto 16px auto !important;
+    }
+    [style*="height:293px"] {
+      height: 140px !important;
+    }
+    [style*="height:180px"] {
+      height: 90px !important;
+    }
+    [style*="height:120px"] {
+      height: 60px !important;
+    }
+    [style*="font-size:2rem"] {
+      font-size: 1.1rem !important;
+    }
+    [style*="font-size:1.1rem"] {
+      font-size: 0.95rem !important;
+    }
+    [style*="font-size:0.98rem"] {
+      font-size: 0.85rem !important;
+    }
+    [style*="font-size:0.95rem"] {
+      font-size: 0.8rem !important;
+    }
+    [style*="font-size:1.08rem"] {
+      font-size: 0.9rem !important;
+    }
+    [style*="font-size:1.05rem"] {
+      font-size: 0.9rem !important;
+    }
+    [style*="font-size:1.25rem"] {
+      font-size: 1rem !important;
+    }
+    [style*="border-radius:32px"] {
+      border-radius: 10px !important;
+    }
+    [style*="border-radius:18px"] {
+      border-radius: 6px !important;
+    }
+  }
+</style>
+</head>
+<body style="background: #f3f3f3;">
+  <!-- #region start-->
+   <div class="wrapper w-full">
+    <!-- #region article-->
+  <div class="w-full h-height-article bg-[#f3f3f3] bg-[url(../images/img-2.png)] bg-cover bg-center ">
+        <div class="w-width-menu h-height-menu bg-bg-menu mx-auto rounded-b-bottom-menu flex items-center justify-between px-[32px] box-border">
+            <div> <img src="./src/images/menu/Logo.png" alt=""></div>
+            <div class="w-fit h-fit">
+              <nav class="flex h-fit justify-between gap-x-11" style="color: #2b2b2b;">
+                <div><a href="#" class="font-vaziri" style="color: #494949;">رزرو خودرو</a></div>
+                <div><a href="#" class="font-vaziri" style="color: #494949;">خدمات ما</a></div>
+                <div><a href="#" class="font-vaziri" style="color: #494949;">بلاگ</a></div>
+                <div><a href="#" class="font-vaziri" style="color: #494949;">درباره ما</a></div>
+                <div><a href="#" class="font-vaziri" style="color: #494949;">تماس با ما</a></div>
+                <div><a href="#"><img src="./src/images/menu/search-outline.png" alt=""></a></div>
+              </nav>
+            </div>
+            <div class="w-fit h-fit ">
+              <a href="#" style="color: whitesmoke;" class="btn btn-primary font-vaziri">ورود / ثبت نام</a>
+            </div>
+        </div>
+     </div>
+
+  <!-- #end region article-->
+  <!-- Search/Filter Frame (rewritten to match screenshot) -->
+  <div style="width:100%;max-width:1100px;margin:-90px auto 32px auto;background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:24px 0;position:relative;z-index:5;">
+    <form style="display:flex;flex-direction:column;gap:8px;padding:0 32px;">
+      <div style="display:flex;align-items:center;justify-content:space-between;">
+        <div style="display:flex;gap:8px;">
+          <button type="button" style="background:#1a4bf0;color:#fff;padding:8px 24px;border-radius:18px;font-size:16px;font-family:vazir,sans-serif;border:none;">اجاره خودرو با راننده</button>
+          <button type="button" style="background:#fafbfc;color:#2b2b2b;padding:8px 24px;border-radius:18px;font-size:16px;font-family:vazir,sans-serif;border:1.5px solid #d1d5db;">اجاره خودرو بی راننده</button>
+          <button type="button" style="background:#fafbfc;color:#2b2b2b;padding:8px 24px;border-radius:18px;font-size:16px;font-family:vazir,sans-serif;border:1.5px solid #d1d5db;">اجاره ماشین عروس</button>
+        </div>
+        <span style="color:#2563eb;font-size:14px;font-family:vazir,sans-serif;cursor:pointer;">اطلاعات بیشتر در مورد رزرو خودرو</span>
+      </div>
+      <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:8px;margin-top:12px;">
+        <div style="display:flex;flex-direction:column;align-items:flex-end;flex:2;min-width:180px;">
+        <span style="font-size:12px;color:#2b2b2b;font-family:vazir,sans-serif;margin-bottom:4px;display:flex;align-items:center;justify-content:flex-start;text-align:right;width:100%;"><img src="./src/images/menu/arrow-left.png" alt="" style="margin-left:4px;">محل تحویل خودرو</span>
+      <input type="text" placeholder="تهران، فرودگاه امام خمینی" style="width:100%;padding:10px 16px;border-radius:8px;border:1px solid #eee;font-size:15px;font-family:vazir,sans-serif;color:#181818;font-weight:700;" oninput="this.style.color='#181818';this.style.fontWeight='700';" onfocus="this.style.color='#181818';this.style.fontWeight='700';" onblur="this.style.color='#181818';this.style.fontWeight='700';">
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;flex:1;min-width:90px;">
+        <span style="font-size:12px;color:#2b2b2b;font-family:vazir,sans-serif;margin-bottom:4px;display:flex;align-items:center;justify-content:flex-start;text-align:right;width:100%;"><img src="./src/images/menu/arrow-left.png" alt="" style="margin-left:4px;">ساعت تحویل</span>
+    <input type="time" value="00:00" style="width:100%;padding:10px 8px;border-radius:8px;border:1px solid #eee;font-size:15px;font-family:vazir,sans-serif;color:#181818;font-weight:700;" oninput="this.style.color='#181818';this.style.fontWeight='700';" onfocus="this.style.color='#181818';this.style.fontWeight='700';" onblur="this.style.color='#181818';this.style.fontWeight='700';">
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;flex:1;min-width:120px;">
+        <span style="font-size:12px;color:#2b2b2b;font-family:vazir,sans-serif;margin-bottom:4px;display:flex;align-items:center;justify-content:flex-start;text-align:right;width:100%;"><img src="./src/images/menu/arrow-left.png" alt="" style="margin-left:4px;">تاریخ بازگشت</span>
+      <input type="date" style="width:100%;padding:10px 8px;border-radius:8px;border:1px solid #eee;font-size:15px;font-family:vazir,sans-serif;color:#181818;font-weight:700;" oninput="this.style.color='#181818';this.style.fontWeight='700';" onfocus="this.style.color='#181818';this.style.fontWeight='700';" onblur="this.style.color='#181818';this.style.fontWeight='700';">
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;flex:1;min-width:90px;">
+        <span style="font-size:12px;color:#2b2b2b;font-family:vazir,sans-serif;margin-bottom:4px;display:flex;align-items:center;justify-content:flex-start;text-align:right;width:100%;"><img src="./src/images/menu/arrow-left.png" alt="" style="margin-left:4px;">ساعت بازگشت</span>
+          <input type="time" value="00:00" style="width:100%;padding:10px 8px;border-radius:8px;border:1px solid #eee;font-size:15px;font-family:vazir,sans-serif;color:#181818;font-weight:700;">
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;flex:1;min-width:120px;">
+        <span style="font-size:12px;color:#2b2b2b;font-family:vazir,sans-serif;margin-bottom:4px;display:flex;align-items:center;justify-content:flex-start;text-align:right;width:100%;"><img src="./src/images/menu/arrow-left.png" alt="" style="margin-left:4px;">تاریخ تحویل</span>
+          <input type="date" style="width:100%;padding:10px 8px;border-radius:8px;border:1px solid #eee;font-size:15px;font-family:vazir,sans-serif;color:#181818;font-weight:700;">
+        </div>
+  <button type="submit" style="background:#ffd600;color:#2b2b2b;width:48px;height:48px;border-radius:12px;font-size:26px;font-family:vazir,sans-serif;border:none;display:flex;align-items:center;justify-content:center;margin-bottom:0;margin-top:32px;box-shadow:0 1px 4px #0001;">
+          <span style="font-size:28px;"><img src="./src/images/menu/Frame 427320815.png" alt=""></span>
+        </button>
+      </div>
+    </form>
+
+  
+  </div>
+  <!-- Car Filter Section (مطابق اسکرین شات) -->
+
+  <!-- Car Brands Row -->
+  <div style="width:100vw;max-width:100vw;margin:48px 0 32px 0;background:#f3f3f3;padding:32px 0 24px 0;display:flex;justify-content:center;align-items:center;position:relative;z-index:4;overflow-x:auto;">
+    <div style="display:flex;gap:64px;align-items:center;justify-content:center;width:100%;max-width:1400px;margin:0 auto;">
+  <img src="./src/images/cars logo/BMW.png" alt="BMW" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/Honda.png" alt="Lexus" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/Hyundai.png" alt="Benz" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/KIA (1).png" alt="Honda" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/KIA (2).png" alt="Hyundai" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/KIA.png" alt="Nissan" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/lexus-logo.png" alt="Toyota" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/Marcedes.png" alt="Kia" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/Nissan.png" alt="Jeep" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+  <img src="./src/images/cars logo/Toyota.png" alt="Land Rover" style="height:56px;width:auto;opacity:0.4;filter: grayscale(1);">
+    </div>
+  </div>
+  <!-- Why AutoRent Section -->
+  <div style="width:100vw;max-width:100vw;background:#f3f3f3;padding:0;margin:0 auto 48px auto;display:flex;flex-direction:column;align-items:center;">
+      <div style="width:1100px;height:293px;margin:0 auto 0 auto;position:relative;border-radius:32px;overflow:hidden;">
+        <img src="./src/images/menu/w.jpg" alt="چرا اتو رنت؟" style="width:100%;height:100%;object-fit:cover;display:block;">
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(24,24,24,0.55);"></div>
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;z-index:2;padding-top:32px;">
+          <h2 style="font-size:1.6rem;font-family:vazir,sans-serif;font-weight:700;color:#ffd600;text-align:center;margin-bottom:10px;letter-spacing:1px;text-shadow:0 2px 8px #000b;">چرا <span style='color:#ffd600;'>اتو رنت؟</span></h2>
+          <p style="font-size:0.85rem;font-family:vazir,sans-serif;color:#fff;text-align:center;line-height:1.9;margin-bottom:0;max-width:900px;margin-left:auto;margin-right:auto;text-shadow:0 2px 8px #000b;">
+            اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در مسافرت ها، قرار ملاقات های مهم، مجالس و مراسم‌های خانوادگی ماشین مناسب خود را دراختیار داشته باشید. اگر شما اصلا خودرویی دراختیار ندارید یا خودروی شما مطمئن نیست، می‌توانید از سویچ، خودروی مناسب خود را کرایه کرده و با آسودگی به سفر بروید.
+          </p>
+        </div>
+      </div>
+  <div style="width:1100px;margin:-90px auto 0 auto;display:flex;justify-content:center;gap:12px;z-index:2;position:relative;">
+    <div style="width:300px;background:#fff;border-radius:24px;box-shadow:0 2px 12px #0002;padding:20px 10px 16px 10px;display:flex;flex-direction:column;align-items:center;">
+        <img src='./src/images/menu/icon (2).png' alt='تحویل در محل' style='width:64px;height:64px;margin-bottom:12px;'>
+  <span style="font-size:0.9rem;font-family:vazir,sans-serif;font-weight:700;color:#222;margin-bottom:5px;">تحویل در محل</span>
+  <span style="font-size:0.85rem;font-family:vazir,sans-serif;color:#888;text-align:center;">تحویل خودرو درزمان و مکان تعیین شده توسط شما خواهد بود.</span>
+      </div>
+  <div style="width:300px;background:#fff;border-radius:24px;box-shadow:0 2px 12px #0002;padding:20px 10px 16px 10px;display:flex;flex-direction:column;align-items:center;">
+        <img src='./src/images/menu/icon (1).png' alt='پشتیبانی ۲۴ ساعته' style='width:64px;height:64px;margin-bottom:12px;'>
+  <span style="font-size:0.9rem;font-family:vazir,sans-serif;font-weight:700;color:#222;margin-bottom:5px;">پشتیبانی ۲۴ ساعته</span>
+  <span style="font-size:0.85rem;font-family:vazir,sans-serif;color:#888;text-align:center;">کارشناسان ما در هرزمان و مکان پاسخگوی سوالات شما خواهند بود.</span>
+      </div>
+  <div style="width:300px;background:#fff;border-radius:24px;box-shadow:0 2px 12px #0002;padding:20px 10px 16px 10px;display:flex;flex-direction:column;align-items:center;">
+        <img src='./src/images/menu/icon.png' alt='قیمت مناسب' style='width:64px;height:64px;margin-bottom:12px;'>
+  <span style="font-size:0.9rem;font-family:vazir,sans-serif;font-weight:700;color:#222;margin-bottom:5px;">قیمت مناسب</span>
+  <span style="font-size:0.85rem;font-family:vazir,sans-serif;color:#888;text-align:center;">هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.</span>
+      </div>
+    </div>
+  </div>
+  <div style="width: 100%; min-height: 300px; background: #f3f3f3;"></div>
+  <!-- Car Types Row -->
+  <div style="width:1100px;margin:-270px auto 8px auto;display:flex;justify-content:center;align-items:stretch;gap:24px;background:#f3f3f3;">
+    <div style="flex:1;min-width:180px;max-width:220px;background:transparent;padding:0;margin:0;box-shadow:none;border-radius:0;display:flex;align-items:stretch;justify-content:stretch;position:relative;height:140px;">
+  <img src="./src/images/car gro/Frame 1430102985.png" alt="اسپرت" style="width:100%;height:100%;object-fit:cover;display:block;margin:0;padding:0;border:none;background:none;border-radius:18px;">
+    </div>
+    <div style="flex:1;min-width:180px;max-width:220px;background:transparent;padding:0;margin:0;box-shadow:none;border-radius:0;display:flex;align-items:stretch;justify-content:stretch;position:relative;height:140px;">
+  <img src="./src/images/car gro/Frame 1430103027.png" alt="شاسی بلند" style="width:100%;height:100%;object-fit:cover;display:block;margin:0;padding:0;border:none;background:none;border-radius:18px;">
+    </div>
+    <div style="flex:1;min-width:180px;max-width:220px;background:transparent;padding:0;margin:0;box-shadow:none;border-radius:0;display:flex;align-items:stretch;justify-content:stretch;position:relative;height:140px;">
+  <img src="./src/images/car gro/Frame 1430103028.png" alt="کروک" style="width:100%;height:100%;object-fit:cover;display:block;margin:0;padding:0;border:none;background:none;border-radius:18px;">
+    </div>
+    <div style="flex:1;min-width:180px;max-width:220px;background:transparent;padding:0;margin:0;box-shadow:none;border-radius:0;display:flex;align-items:stretch;justify-content:stretch;position:relative;height:140px;">
+  <img src="./src/images/car gro/Frame 1430103029.png" alt="سدان" style="width:100%;height:100%;object-fit:cover;display:block;margin:0;padding:0;border:none;background:none;border-radius:18px;">
+    </div>
+    <div style="flex:1;min-width:180px;max-width:220px;background:transparent;padding:0;margin:0;box-shadow:none;border-radius:0;display:flex;align-items:stretch;justify-content:stretch;position:relative;height:140px;">
+  <img src="./src/images/car gro/Group 11651.png" alt="کوپه" style="width:100%;height:100%;object-fit:cover;display:block;margin:0;padding:0;border:none;background:none;border-radius:18px;">
+    </div>
+  </div>
+
+   </div>
+   <!-- #end region start-->
+
+  <!-- Car Filter Section (مطابق اسکرین شات) -->
+  <div style="width:1100px;margin:32px auto 48px auto;padding:32px 0 24px 0;background:#f7f7f7;border-radius:24px;box-shadow:0 2px 8px #0001;display:flex;flex-direction:column;align-items:center;position:relative;">
+    <!-- حذف مشاهده همه تکراری -->
+      <span style="color:#2563eb;font-size:1.1rem;font-family:vazir,sans-serif;display:flex;align-items:center;gap:4px;cursor:pointer;position:absolute;left:32px;bottom:24px;margin:0;">
+        مشاهده همه
+        <img src='./src/images/menu/arrow-left.png' alt='' style='width:18px;height:18px;transform:rotate(180deg);margin-right:2px;'>
+      </span>
+    <div style="width:100%;text-align:center;margin-bottom:8px;">
+      <div style="font-size:1.6rem;font-family:vazir,sans-serif;font-weight:700;color:#222;letter-spacing:0.5px;">
+        رزرو خودرو در <span style='color:#c89c2a;'>اُتورِنت</span>
+      </div>
+      <div style="font-size:1.2rem;font-family:vazir,sans-serif;color:#888;margin-top:8px;">
+        مشاهده موجودی خودروها
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:24px;width:100%;margin-top:24px;">
+      <button style="min-width:160px;padding:14px 0;border-radius:12px;border:2px solid #2563eb;background:#2563eb;color:#fff;font-size:1.1rem;font-family:vazir,sans-serif;font-weight:500;box-shadow:0 1px 4px #0001;">پرطرفدار</button>
+      <button style="min-width:160px;padding:14px 0;border-radius:12px;border:2px solid #2563eb;background:#fff;color:#2563eb;font-size:1.1rem;font-family:vazir,sans-serif;font-weight:500;box-shadow:0 1px 4px #0001;">لوکس</button>
+      <button style="min-width:160px;padding:14px 0;border-radius:12px;border:2px solid #2563eb;background:#fff;color:#2563eb;font-size:1.1rem;font-family:vazir,sans-serif;font-weight:500;box-shadow:0 1px 4px #0001;">اقتصادی</button>
+    </div>
+  </div>
+
+  
+  <div style="width:1100px;margin:0 auto 48px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:32px 24px;">
+    <!-- Card 1 -->
+    <div style="background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:20px 16px 16px 16px;display:flex;flex-direction:column;align-items:stretch;position:relative;">
+
+  <img src="./src/images/car pri/Framegen.png" alt="هیوندای کوپه" style="width:100%;height:180px;object-fit:contain;border-radius:12px;margin-bottom:8px;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin-bottom:2px;">اجاره جنسیس کوپه</div>
+      <div style="font-size:0.95rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:8px;">مدل: ۲۰۱۶</div>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">روزانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">ماهیانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.92rem;color:#888;font-family:vazir,sans-serif;margin-bottom:10px;">
+        <span>مبلغ ضمانت: ۸۰ میلیون تومان</span>
+        <span></span>
+      </div>
+      <button style="width:100%;background:#2563eb;color:#fff;border:none;border-radius:10px;padding:12px 0;font-size:1.08rem;font-family:vazir,sans-serif;font-weight:500;cursor:pointer;">درخواست رزرو</button>
+    </div>
+    <!-- Card 2 -->
+    <div style="background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:20px 16px 16px 16px;display:flex;flex-direction:column;align-items:stretch;position:relative;">
+
+  <img src="./src/images/car pri/ (1)lan.png" alt="تویوتا لندکروزر" style="width:100%;height:180px;object-fit:contain;border-radius:12px;margin-bottom:8px;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin-bottom:2px;">اجاره تویوتا لندکروزر در تهران ۲۰۱۳...</div>
+      <div style="font-size:0.95rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:8px;">مدل: ۲۰۱۳</div>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">روزانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">ماهیانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.92rem;color:#888;font-family:vazir,sans-serif;margin-bottom:10px;">
+        <span>مبلغ ضمانت: ۸۰ میلیون تومان</span>
+        <span></span>
+      </div>
+      <button style="width:100%;background:#2563eb;color:#fff;border:none;border-radius:10px;padding:12px 0;font-size:1.08rem;font-family:vazir,sans-serif;font-weight:500;cursor:pointer;">درخواست رزرو</button>
+    </div>
+    <!-- Card 3 -->
+    <div style="background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:20px 16px 16px 16px;display:flex;flex-direction:column;align-items:stretch;position:relative;">
+
+  <img src="./src/images/car pri/Framebenz s (2).png" alt="بنز E350 سدان" style="width:100%;height:180px;object-fit:contain;border-radius:12px;margin-bottom:8px;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin-bottom:2px;">اجاره بنز E350 سدان</div>
+      <div style="font-size:0.95rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:8px;">مدل: ۲۰۱۶</div>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">روزانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">ماهیانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.92rem;color:#888;font-family:vazir,sans-serif;margin-bottom:10px;">
+        <span>مبلغ ضمانت: ۸۰ میلیون تومان</span>
+        <span></span>
+      </div>
+      <button style="width:100%;background:#2563eb;color:#fff;border:none;border-radius:10px;padding:12px 0;font-size:1.08rem;font-family:vazir,sans-serif;font-weight:500;cursor:pointer;">درخواست رزرو</button>
+    </div>
+    <!-- Card 4 -->
+    <div style="background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:20px 16px 16px 16px;display:flex;flex-direction:column;align-items:stretch;position:relative;">
+
+  <img src="./src/images/car pri/Framemaz (3).png" alt="مازراتی" style="width:100%;height:180px;object-fit:contain;border-radius:12px;margin-bottom:8px;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin-bottom:2px;">اجاره مازراتی </div>
+      <div style="font-size:0.95rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:8px;">مدل: ۲۰۱۶</div>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">روزانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">ماهیانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.92rem;color:#888;font-family:vazir,sans-serif;margin-bottom:10px;">
+        <span>مبلغ ضمانت: ۸۰ میلیون تومان</span>
+        <span></span>
+      </div>
+      <button style="width:100%;background:#2563eb;color:#fff;border:none;border-radius:10px;padding:12px 0;font-size:1.08rem;font-family:vazir,sans-serif;font-weight:500;cursor:pointer;">درخواست رزرو</button>
+    </div>
+    <!-- Card 5 -->
+    <div style="background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:20px 16px 16px 16px;display:flex;flex-direction:column;align-items:stretch;position:relative;">
+
+  <img src="./src/images/car pri/Framehy (4).png" alt="هیوندای توسان" style="width:100%;height:180px;object-fit:contain;border-radius:12px;margin-bottom:8px;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin-bottom:2px;">اجاره هیوندای توسان ۲۰۱۴</div>
+      <div style="font-size:0.95rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:8px;">مدل: ۲۰۱۴</div>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">روزانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">ماهیانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.92rem;color:#888;font-family:vazir,sans-serif;margin-bottom:10px;">
+        <span>مبلغ ضمانت: ۸۰ میلیون تومان</span>
+        <span></span>
+      </div>
+      <button style="width:100%;background:#2563eb;color:#fff;border:none;border-radius:10px;padding:12px 0;font-size:1.08rem;font-family:vazir,sans-serif;font-weight:500;cursor:pointer;">درخواست رزرو</button>
+    </div>
+    <!-- Card 6 -->
+    <div style="background:#fff;border-radius:16px;box-shadow:0 2px 8px #0001;padding:20px 16px 16px 16px;display:flex;flex-direction:column;align-items:stretch;position:relative;">
+
+  <img src="./src/images/car pri/Framebm (5).png" alt="بی ام و 528" style="width:100%;height:180px;object-fit:contain;border-radius:12px;margin-bottom:8px;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin-bottom:2px;">اجاره بی ام و ۵۲۸</div>
+      <div style="font-size:0.95rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:8px;">مدل: ۲۰۱۶</div>
+      <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:8px;">
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">روزانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.95rem;font-family:vazir,sans-serif;">
+          <span style="color:#888;">ماهیانه</span>
+          <span style="color:#2563eb;font-weight:700;">۸,۵۰۰,۰۰۰ <span style='font-size:0.85em;'>تومان</span></span>
+          <span style="color:#888;">از ۱ تا ۳۱ روز</span>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:0.92rem;color:#888;font-family:vazir,sans-serif;margin-bottom:10px;">
+        <span>مبلغ ضمانت: ۸۰ میلیون تومان</span>
+        <span></span>
+      </div>
+      <button style="width:100%;background:#2563eb;color:#fff;border:none;border-radius:10px;padding:12px 0;font-size:1.08rem;font-family:vazir,sans-serif;font-weight:500;cursor:pointer;">درخواست رزرو</button>
+    </div>
+  </div>
+
+</body>
+<!-- How to Rent Section (moved to bottom) -->
+<div style="width:1100px;margin:48px auto 48px auto;padding:0;background:#fff;border-radius:24px;box-shadow:0 2px 8px #0001;display:flex;flex-direction:column;align-items:center;position:relative;">
+  <div style="width:100%;text-align:center;margin-top:32px;margin-bottom:32px;">
+    <div style="font-size:1.1rem;font-family:vazir,sans-serif;color:#888;margin-bottom:8px;">چگونه در وبسایت</div>
+    <div style="font-size:2rem;font-family:vazir,sans-serif;font-weight:700;color:#222;letter-spacing:0.5px;">
+      <span style='color:#c89c2a;'> اُتورِنت،</span>
+      <span style='color:#222;'>خودرو رزرو کنیم؟</span>
+      
+    </div>
+  </div>
+  <div style="display:flex;flex-direction:row;justify-content:center;align-items:stretch;width:100%;gap:0;">
+    <!-- Steps Left -->
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;padding:0 0 0 12px;">
+      <div style='display:flex;align-items:center;margin-bottom:48px;'>
+        <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#3b5cff;line-height:1;margin-left:12px;">۲</div>
+        <div style="background:#fff;border-radius:12px;box-shadow:0 2px 8px #0001;padding:12px;display:flex;align-items:center;justify-content:center;margin-left:10px;">
+          <img src="./src/images/car how/3.png" alt="calendar" style="width:44px;height:44px;">
+        </div>
+        <div style="text-align:right;max-width:180px;">
+          <div style="font-size:1.1rem;font-family:vazir,sans-serif;font-weight:700;color:#222;">تاریخ <span style='color:#c89c2a;'>تحویل</span> را تعیین کنید.</div>
+          <div style="font-size:0.95rem;font-family:vazir,sans-serif;color:#888;">تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید.</div>
+        </div>
+      </div>
+      <div style='display:flex;align-items:center;'>
+      <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#3b5cff;line-height:1;margin-left:12px;margin-top:-18px;"></div>
+      <div style="display:flex;align-items:center;margin-bottom:48px;margin-top:-38px;">
+        <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#3b5cff;line-height:1;margin-left:12px;margin-top:-18px;">۴</div>
+        <div style="background:#fff;border-radius:12px;box-shadow:0 2px 8px #0001;padding:12px;display:flex;align-items:center;justify-content:center;margin-left:10px;margin-top:-8px;">
+          <img src="./src/images/car how/4.png" alt="key" style="width:44px;height:44px;">
+        </div>
+        <div style="text-align:right;max-width:180px;margin-top:-32px;">
+          <div style="font-size:1.1rem;font-family:vazir,sans-serif;font-weight:700;color:#222;">خودرو را <span style='color:#c89c2a;'>دریافت</span> کنید.</div>
+          <div style="font-size:0.95rem;font-family:vazir,sans-serif;color:#888;">در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.</div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!-- Center Car -->
+    <div style="flex:1.2;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:320px;max-width:400px;">
+      <div style="width:100%;height:420px;display:flex;align-items:center;justify-content:center;position:relative;">
+  <div style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:12px;height:100%;background:#ffd600;border-radius:6px;"></div>
+  <img src="./src/images/car how/55.png" alt="car" style="width:80%;max-width:220px;z-index:2;position:relative;">
+      </div>
+    </div>
+    <!-- Steps Right -->
+    <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:0 12px 0 0;">
+      <div style='display:flex;align-items:center;margin-bottom:48px;'>
+        <div style="text-align:right;max-width:180px;margin-left:10px;">
+          <div style="font-size:1.1rem;font-family:vazir,sans-serif;font-weight:700;color:#222;">خودروی <span style='color:#c89c2a;'>خود</span> را انتخاب کنید.</div>
+          <div style="font-size:0.95rem;font-family:vazir,sans-serif;color:#888;">خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.</div>
+        </div>
+        <div style="background:#fff;border-radius:12px;box-shadow:0 2px 8px #0001;padding:12px;display:flex;align-items:center;justify-content:center;margin-right:10px;">
+          <img src="./src/images/car how/1.png" alt="car icon" style="width:44px;height:44px;">
+        </div>
+        <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#3b5cff;line-height:1;margin-right:12px;">۱</div>
+      </div>
+      <div style='display:flex;align-items:center;'>
+        <div style="text-align:right;max-width:180px;margin-left:10px;">
+          <div style="font-size:1.1rem;font-family:vazir,sans-serif;font-weight:700;color:#222;">هزینه <span style='color:#c89c2a;'>اجاره</span> را پرداخت کنید.</div>
+          <div style="font-size:0.95rem;font-family:vazir,sans-serif;color:#888;">می‌توانید از طریق کیف پول آنلاین یا کارت‌های عضو شبکه شتاب هزینه اجاره را پرداخت کنید.</div>
+        </div>
+        <div style="background:#fff;border-radius:12px;box-shadow:0 2px 8px #0001;padding:12px;display:flex;align-items:center;justify-content:center;margin-right:10px;">
+          <img src="./src/images/car how/2.png" alt="card" style="width:44px;height:44px;">
+        </div>
+        <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#3b5cff;line-height:1;margin-right:12px;">۳</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ Section -->
+<div style="width:1100px;max-width:98vw;margin:64px auto 64px auto;padding:0 0 48px 0;background:#f3f3f3;border-radius:16px;box-sizing:border-box;">
+  <div style="width:100%;text-align:center;padding-top:40px;">
+    <div style="font-size:2rem;font-family:vazir,sans-serif;color:#888;margin-bottom:8px;">پرتکرارترین سؤالاتی که پرسیدید</div>
+    <div style="font-size:2.5rem;font-family:vazir,sans-serif;font-weight:700;color:#222;letter-spacing:0.5px;margin-bottom:32px;">
+      سؤالات <span style='color:#ffd600;'>متداول</span>
+    </div>
+  </div>
+  <div style="display:flex;gap:32px;align-items:stretch;justify-content:center;width:100%;max-width:1200px;margin:0 auto;">
+    
+    <!-- Right: Accordion -->
+  <div style="flex:2.2;display:flex;flex-direction:column;gap:0;background:transparent;">
+  <div style="background:#fff;border-radius:18px;box-shadow:none;padding:0 0 0 0;display:flex;flex-direction:column;border-bottom:1.5px solid #e5e7eb;margin-bottom:18px;">
+    <div style="padding:28px 32px 28px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+          <span style="font-size:1.25rem;font-family:vazir,sans-serif;color:#222;">در صورت بروز نقص فنی برای خودرو چه اتفاقی می‌افتد؟</span>
+          <span style="font-size:2.1rem;color:#2563eb;">+</span>
+        </div>
+      </div>
+      <!-- Question 2 (open) -->
+  <div style="background:#fff;border-radius:18px;box-shadow:none;padding:0 0 0 0;display:flex;flex-direction:column;border-bottom:1.5px solid #e5e7eb;margin-bottom:18px;">
+        <div style="padding:28px 32px 0 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+          <span style="font-size:1.25rem;font-family:vazir,sans-serif;color:#222;font-weight:700;">هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟</span>
+          <span style="font-size:2.1rem;color:#2563eb;">&#8722;</span>
+        </div>
+        <div style="padding:16px 32px 28px 24px;font-size:1.08rem;font-family:vazir,sans-serif;color:#666;line-height:2;">
+          در زمان اجاره خودرو بدون راننده، خودروها کارواش شده و با باک بنزین پر تحویل مشتریان عزیز می‌گردد. در زمان استرداد خودرو در صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسری سوخت باشد هزینه آن بر عهده مشتری می‌باشد.
+        </div>
+      </div>
+      <!-- Question 3 -->
+  <div style="background:#fff;border-radius:18px;box-shadow:none;padding:0 0 0 0;display:flex;flex-direction:column;border-bottom:1.5px solid #e5e7eb;margin-bottom:18px;">
+        <div style="padding:28px 32px 28px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+          <span style="font-size:1.25rem;font-family:vazir,sans-serif;color:#222;">آیا ماشین های اتورنت دارای بیمه هستند؟</span>
+          <span style="font-size:2.1rem;color:#2563eb;">+</span>
+        </div>
+      </div>
+      <!-- Question 4 -->
+  <div style="background:#fff;border-radius:18px;box-shadow:none;padding:0 0 0 0;display:flex;flex-direction:column;">
+    <div style="padding:28px 32px 28px 24px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;">
+          <span style="font-size:1.25rem;font-family:vazir,sans-serif;color:#222;">محدودیت کیلومتر در اجاره خودرو چقدر می‌باشد؟</span>
+          <span style="font-size:2.1rem;color:#2563eb;">+</span>
+        </div>
+      </div>
+    </div>
+      <!-- Left: Image -->
+  <div style="flex:1;min-width:340px;max-width:340px;background:#ffd24d;border-radius:18px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative;">
+          <img src='./src/images/man/man.png' alt='faq-person' style='width:100%;height:100%;object-fit:cover;display:block;'>
+        </div>
+
+  </div>
+</div>
+<!-- Customer Testimonials Section -->
+<div style="width:100vw;background:#f3f3f3;padding:0;margin:0 auto 48px auto;display:flex;flex-direction:column;align-items:center;">
+  <div style="width:1100px;max-width:98vw;margin:64px auto 0 auto;">
+    <div style="text-align:center;margin-bottom:24px;">
+      <div style="font-size:1.3rem;font-family:vazir,sans-serif;color:#888;margin-bottom:8px;">آنچه مشتریان ما درمورد‌مان گفته‌اند.</div>
+      <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#222;letter-spacing:0.5px;margin-bottom:0;">
+        نظرات <span style='color:#ffd600;'>مشتریان</span>
+      </div>
+    </div>
+    <div style="background:#fff;border-radius:24px;box-shadow:0 2px 8px #0001;padding:48px 0 32px 0;display:flex;flex-direction:column;align-items:center;min-height:420px;">
+      <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;">
+        <div style="width:120px;height:120px;border-radius:50%;border:4px solid #3b5cff;overflow:hidden;margin-bottom:16px;">
+          <img src="./src/images/person/img.png" alt="user" style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+        <div style="font-family:vazir,sans-serif;font-size:1.25rem;font-weight:700;color:#222;margin-bottom:8px;">اولدوز بهاور</div>
+        <div style="display:flex;gap:2px;margin-bottom:16px;">
+          <span style="color:#ffd600;font-size:2rem;">★</span>
+          <span style="color:#ffd600;font-size:2rem;">★</span>
+          <span style="color:#ffd600;font-size:2rem;">★</span>
+          <span style="color:#ffd600;font-size:2rem;">★</span>
+          <span style="color:#ffd600;font-size:2rem;opacity:0.3;">★</span>
+        </div>
+        <div style="font-family:vazir,sans-serif;font-size:1.08rem;color:#444;max-width:700px;margin-bottom:8px;line-height:2;">
+          اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک شرکت با سابقه و مطمئن می‌گشتم!<br>بدون هیچ شکی میگم، اتو رنت تو کار خودش بی‌نظیره!<br>پشتیبانی عالی، هزینه بسیار مناسب، آسان بودن روند اجاره و رزرو، هرچی بگم کم گفتم!<br>حتما دفعه بعدی هم برای اجاره ماشین به سراغشون میام.
+        </div>
+      </div>
+      <div style="display:flex;justify-content:center;gap:24px;margin-top:40px;width:100%;">
+        <!-- User Card 1 -->
+        <div style="flex:1;max-width:220px;background:#fff;border-radius:16px;box-shadow:0 1px 4px #0001;padding:16px 12px;display:flex;align-items:center;justify-content:center;min-height:80px;cursor:pointer;transition:box-shadow 0.2s;border:none;">
+          <img src="./src/images/person/Frame 427320999.png" alt="" style="border:none;outline:none;box-shadow:none;">
+        </div>
+        <!-- User Card 2 -->
+        <div style="flex:1;max-width:220px;background:#fff;border-radius:16px;box-shadow:0 1px 4px #0001;padding:16px 12px;display:flex;align-items:center;justify-content:center;min-height:80px;cursor:pointer;transition:box-shadow 0.2s;border:none;">
+          <img src="./src/images/person/Frame 427320996.png" alt="" style="border:none;outline:none;box-shadow:none;">
+        </div>
+        <!-- User Card 3 -->
+        <div style="flex:1;max-width:220px;background:#fff;border-radius:16px;box-shadow:0 1px 4px #0001;padding:16px 12px;display:flex;align-items:center;justify-content:center;min-height:80px;cursor:pointer;transition:box-shadow 0.2s;border:none;">
+          <img src="./src/images/person/Frame 427320997.png" alt="" style="border:none;outline:none;box-shadow:none;">
+        </div>
+        <!-- User Card 4 -->
+        <div style="flex:1;max-width:220px;background:#fff;border-radius:16px;box-shadow:0 1px 4px #0001;padding:16px 12px;display:flex;align-items:center;justify-content:center;min-height:80px;cursor:pointer;transition:box-shadow 0.2s;border:none;">
+          <img src="./src/images/person/Frame 427320998.png" alt="" style="border:none;outline:none;box-shadow:none;">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Magazine Section -->
+<div style="width:1100px;max-width:98vw;margin:64px auto 64px auto;padding:0;background:#f5f5f5;border-radius:16px;box-sizing:border-box;">
+  <div style="width:100%;position:relative;padding-top:40px;min-height:70px;">
+    <a href="#" style="position:absolute;left:0;top:50%;transform:translateY(-50%);color:#2563eb;font-size:1.15rem;font-family:vazir,sans-serif;display:flex;align-items:center;gap:4px;text-decoration:none;font-weight:500;z-index:2;">
+      <span style="margin-right:4px;">مشاهده همه</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/271/271228.png" alt="arrow-left" style="width:20px;height:20px;transform:rotate(180deg);">
+    </a>
+    <div style="display:flex;flex-direction:column;align-items:center;justify-content:center;width:fit-content;margin:0 auto;">
+      <div style="font-size:1.3rem;font-family:vazir,sans-serif;color:#888;">مقالات ما</div>
+      <div style="font-size:2.2rem;font-family:vazir,sans-serif;font-weight:700;color:#222;letter-spacing:0.5px;">
+        <span style="color:#ffd600;">مجله خودرو</span>
+      </div>
+    </div>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:stretch;gap:24px;width:100%;max-width:1200px;margin:0 auto 0 auto;padding:40px 0 0 0;">
+    <!-- Card 1 -->
+    <div style="flex:1;background:#fff;border-radius:16px;box-shadow:0 1px 8px #0001;padding:0 0 24px 0;display:flex;flex-direction:column;align-items:center;border:1.5px solid #e5e7eb;transition:box-shadow 0.2s;">
+      <img src="./src/images/maghale/pic.png" alt="jeep" style="width:100%;height:200px;object-fit:cover;border-radius:16px 16px 0 0;margin-bottom:0;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin:24px 0 8px 0;width:100%;padding-right:16px;">روش های مختلف برای اجاره خودرو</div>
+      <div style="font-size:0.98rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:16px;padding:0 16px;width:100%;">امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولات زیادی شده..</div>
+      <div style="display:flex;align-items:center;justify-content:flex-start;gap:16px;font-size:0.98rem;color:#888;font-family:vazir,sans-serif;width:100%;padding-right:16px;">
+        <span>۳ دقیقه</span>
+        <span style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1827/1827504.png" alt="clock" style="width:18px;height:18px;filter:grayscale(1);">
+        </span>
+        <span>۱,۲۱۳</span>
+        <span style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="eye" style="width:18px;height:18px;filter:grayscale(1);">
+        </span>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div style="flex:1;background:#fff;border-radius:16px;box-shadow:0 1px 8px #0001;padding:0 0 24px 0;display:flex;flex-direction:column;align-items:center;border:1.5px solid #e5e7eb;transition:box-shadow 0.2s;">
+      <img src="./src/images/maghale/pic (2).png" alt="camaro" style="width:100%;height:200px;object-fit:cover;border-radius:16px 16px 0 0;margin-bottom:0;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin:24px 0 8px 0;width:100%;padding-right:16px;">روش های مختلف برای اجاره خودرو</div>
+      <div style="font-size:0.98rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:16px;padding:0 16px;width:100%;">امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولات زیادی شده..</div>
+      <div style="display:flex;align-items:center;justify-content:flex-start;gap:16px;font-size:0.98rem;color:#888;font-family:vazir,sans-serif;width:100%;padding-right:16px;">
+        <span>۳ دقیقه</span>
+        <span style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1827/1827504.png" alt="clock" style="width:18px;height:18px;filter:grayscale(1);">
+        </span>
+        <span>۱,۲۱۳</span>
+        <span style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="eye" style="width:18px;height:18px;filter:grayscale(1);">
+        </span>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div style="flex:1;background:#fff;border-radius:16px;box-shadow:0 1px 8px #0001;padding:0 0 24px 0;display:flex;flex-direction:column;align-items:center;border:1.5px solid #e5e7eb;transition:box-shadow 0.2s;">
+      <img src="./src/images/maghale/pic (1).png" alt="lexus" style="width:100%;height:200px;object-fit:cover;border-radius:16px 16px 0 0;margin-bottom:0;">
+      <div style="font-family:vazir,sans-serif;font-size:1.08rem;font-weight:700;color:#222;text-align:right;margin:24px 0 8px 0;width:100%;padding-right:16px;">روش های مختلف برای اجاره خودرو</div>
+      <div style="font-size:0.98rem;color:#888;font-family:vazir,sans-serif;text-align:right;margin-bottom:16px;padding:0 16px;width:100%;">امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار تحولات زیادی شده..</div>
+      <div style="display:flex;align-items:center;justify-content:flex-start;gap:16px;font-size:0.98rem;color:#888;font-family:vazir,sans-serif;width:100%;padding-right:16px;">
+        <span>۳ دقیقه</span>
+        <span style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1827/1827504.png" alt="clock" style="width:18px;height:18px;filter:grayscale(1);">
+        </span>
+        <span>۱,۲۱۳</span>
+        <span style="display:flex;align-items:center;gap:4px;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="eye" style="width:18px;height:18px;filter:grayscale(1);">
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Section -->
+<div style="width:1100px;max-width:98vw;margin:64px auto 0 auto;padding:0 0 0 0;background:#232323;border-radius:24px;box-shadow:0 2px 12px #0002;box-sizing:border-box;position:relative;color:#fff;">
+  <!-- Top Row -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:32px 32px 0 32px;border-radius:24px 24px 0 0;gap:24px;">
+    <!-- Address -->
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;">
+      <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;">آدرس</span>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border-radius:12px;padding:8px 16px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="map" style="width:24px;height:24px;filter:invert(1);">
+        <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;">تهران- خ شادمان</span>
+      </div>
+    </div>
+    <!-- Email -->
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;">
+      <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;">ایمیل</span>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border-radius:12px;padding:8px 16px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="email" style="width:24px;height:24px;filter:invert(1);">
+        <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;">autorent@info.com</span>
+      </div>
+    </div>
+    <!-- Phone -->
+    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;">
+      <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;">ارتباط با ما</span>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.07);border-radius:12px;padding:8px 16px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="phone" style="width:24px;height:24px;filter:invert(1);">
+        <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;">0912-1236545</span>
+      </div>
+    </div>
+  </div>
+  <!-- Divider -->
+  <div style="width:94%;height:1px;background:rgba(255,255,255,0.13);margin:32px auto 0 auto;"></div>
+  <!-- Middle Row -->
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;padding:32px 32px 0 32px;gap:24px;">
+    <!-- Logo & Description -->
+    <div style="flex:2;display:flex;flex-direction:column;align-items:flex-end;gap:12px;">
+  <img src="./src/images/footer/Logo.png" alt="logo" style="width:120px;height:auto;margin-right:8px;">
+      <div style="font-size:1.05rem;font-family:vazir,sans-serif;color:#fff;max-width:340px;text-align:right;line-height:2;">
+        اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن بزرگ‌ترین ناوگان خودرویی مشتمل از انواع خودروهای صفر کیلومتر اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به مشتریان است.
+      </div>
+    </div>
+    <!-- Links -->
+    <div style="flex:1.2;display:flex;flex-direction:column;align-items:flex-end;gap:10px;text-align:right;width:100%;">
+      <a href="#" style="color:#fff;font-family:vazir,sans-serif;font-size:1.05rem;text-decoration:none;margin-bottom:2px;text-align:right;">درباره ما</a>
+      <a href="#" style="color:#fff;font-family:vazir,sans-serif;font-size:1.05rem;text-decoration:none;margin-bottom:2px;text-align:right;">تماس با ما</a>
+      <a href="#" style="color:#fff;font-family:vazir,sans-serif;font-size:1.05rem;text-decoration:none;margin-bottom:2px;text-align:right;">سوالات متداول</a>
+      <a href="#" style="color:#fff;font-family:vazir,sans-serif;font-size:1.05rem;text-decoration:none;text-align:right;">دسترسی آسان</a>
+    </div>
+    <!-- Newsletter -->
+    <div style="flex:1.2;display:flex;flex-direction:column;align-items:flex-end;gap:12px;">
+      <span style="font-size:1.1rem;font-family:vazir,sans-serif;font-weight:700;color:#fff;">خبرنامه</span>
+      <form style="display:flex;align-items:center;gap:0;width:100%;">
+        <input type="email" placeholder="ایمیل خود را وارد کنید" style="font-family:vazir,sans-serif;font-size:1.05rem;padding:10px 16px;border-radius:8px 0 0 8px;border:none;outline:none;width:180px;background:#232323;color:#fff;border:1.5px solid #888;">
+        <button type="submit" style="background:#ffd600;color:#232323;font-family:vazir,sans-serif;font-size:1.05rem;font-weight:700;padding:10px 24px;border-radius:0 8px 8px 0;border:none;cursor:pointer;">ارسال</button>
+      </form>
+    </div>
+  </div>
+  <!-- Divider -->
+  <div style="width:94%;height:1px;background:rgba(255,255,255,0.13);margin:32px auto 0 auto;"></div>
+  <!-- Bottom Row -->
+  <div style="width:100%;text-align:center;padding:24px 0 16px 0;">
+    <span style="font-size:1.05rem;font-family:vazir,sans-serif;color:#bdbdbd;">تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" alt="cc" style="width:18px;height:18px;vertical-align:middle;opacity:0.7;margin-right:4px;"></span>
+  </div>
+</div>
+
+</html>
